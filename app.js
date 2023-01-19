@@ -10,7 +10,7 @@ http
     // レスポンスボディー"Hello World"を送信
     response.end("Hello World\n");
   })
-  .listen(8000);
+  .listen(process.env.PORT || 3000);
 
 //  サーバーにアクセスするための URL を出力
-console.log("Server running at http://127.0.0.1:8000/");
+console.log("Server running at https://nuxt-app-backend.onrender.com");
